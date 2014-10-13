@@ -3,7 +3,11 @@ var router = express.Router();
 
 /* GET users listing. */
 router.get('/', function(req, res) {
-  //res.send('respond with a resource');
+
+  var img = '<img src="' + 'http://192.227.234.154:40000/' + '"">'
+
+  res.send( img );
+  res.end();
 });
 
 module.exports = router;
